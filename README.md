@@ -1,156 +1,107 @@
-EncryptX 🔐
-Advanced File Encryption & Decryption Tool
+<div align="center">🔐 EncryptX</div>
+<div align="center">Modern. Fast. Secure File Encryption — All in the Browser</div>
+<p align="center"> <img src="https://img.shields.io/badge/Framework-Vite-blue?style=flat-square"> <img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square"> <img src="https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?style=flat-square"> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square"> </p> <p align="center"> EncryptX is a lightweight, privacy-focused tool for securely encrypting and decrypting files directly in your browser using AES-256 encryption. <br>No uploads. No servers. No tracking. 100% client-side security. </p>
+✨ Features
 
-EncryptX is a modern, fast, and secure web-based file encryption platform built using Vite + TypeScript + Tailwind CSS.
-It allows users to encrypt and decrypt files directly in the browser using AES-256 encryption — ensuring maximum privacy with zero backend.
+🔒 AES-256 Secure Encryption — Industry-standard protection
 
-🚀 Features
-🔒 Strong File Encryption
+⚡ Super Fast Processing using WebCrypto API
 
-AES-256 encryption
+📂 Drag & Drop File Support
 
-100% client-side (files never leave your device)
+🔑 Built-in Strong Password Generator
 
-Fast encrypt/decrypt operations
+🛡 100% Client-Side (Zero Backend)
 
-🧩 Drag & Drop File Upload
+🌓 Clean, Modern UI with TailwindCSS
 
-Simple file drop-zone
+🔄 Instant Encryption/Decryption Preview
 
-Multi-file support
+📱 Mobile Friendly Interface
 
-Real-time file preview
+🚀 Live Demo (after deployment)
 
-🔑 Advanced Password Handling
+👉 https://encryptx.vercel.app
 
-Strong password generator
-
-Live password strength check
-
-Manual or automatic password modes
-
-⚡ Lightning Fast
-
-Powered by Vite
-
-Lightweight frontend app
-
-Instant UI updates
-
-📥 Installation
-Clone the Repository
+🧩 Tech Stack
+Layer	Technology
+Frontend	Vite + TypeScript
+UI Styling	Tailwind CSS
+Crypto Core	WebCrypto API / CryptoJS
+Deployment	Vercel
+📦 Installation
 git clone https://github.com/Kartiksharma88/EncryptX.git
 cd EncryptX
-
-Install Dependencies
 npm install
-
-Start Development Server
 npm run dev
 
 
-Visit in browser:
+Open in browser:
 
-👉 http://localhost:5173
+http://localhost:5173
 
-🧪 First Run Guide
+🛠 Usage
+Encrypt Files
 
-Open the app
-
-Go to Encryption tab
+Open EncryptX
 
 Drag & drop files
 
-Enter (or generate) a strong password
+Enter or generate a strong password
 
-Click Encrypt Files
+Click Encrypt
 
-Download encrypted result
+Download encrypted file
 
-Switch to Decrypt for decoding
+Decrypt Files
 
-📦 Production Build
+Upload encrypted file
 
-Create optimized build:
+Enter correct password
 
+Click Decrypt
+
+Download original file
+
+🏗 Production Build
 npm run build
-
-
-Preview it locally:
-
 npm run preview
 
-🐳 Docker Deployment
-Dockerfile
-FROM node:20-alpine AS builder
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-
-Build & Run
+🐳 Docker Support
 docker build -t encryptx .
 docker run -p 80:80 encryptx
 
-📁 Project Structure
-EncryptX/
-│
-├── src/                
-├── index.html          
-├── package.json        
-├── tailwind.config.js  
-├── vite.config.ts      
-└── README.md           
+☁️ Deploy on Vercel
 
-⚙️ Technologies Used
-
-Vite
-
-TypeScript
-
-Tailwind CSS
-
-WebCrypto API / CryptoJS
-
-Node.js
-
-☁️ Deployment on Vercel
+Push repo to GitHub
 
 Go to https://vercel.com
 
-Import the GitHub repo
+Import repository
 
-Set:
+Configure:
 
-Build Command → npm run build
+Framework: Vite
 
-Output Directory → dist
+Build Command: npm run build
 
-Click Deploy
+Output: dist
 
-Your project will be live in seconds.
+Deploy 🚀
+
+📸 Screenshots
+/screenshots
+   ├── ui-home.png
+   ├── encrypt.png
+   └── decrypt.png
+
+
+Add images when you want — I can help you generate UI mockups too.
 
 👨‍💻 Author
+
 Kartik Sharma
 
-GitHub: https://github.com/Kartiksharma88
+GitHub → https://github.com/Kartiksharma88
 
-LinkedIn: https://www.linkedin.com/in/kartik-sharma-profile/
-
-🛡️ Security Notes
-
-All encryption runs locally
-
-No servers involved
-
-No file or password ever leaves your device
-
-🤝 Contributing
-
-Pull requests and feature suggestions are welcome!
+LinkedIn → https://www.linkedin.com/in/kartik-sharma-profile/
